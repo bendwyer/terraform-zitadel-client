@@ -31,14 +31,17 @@ Terraform module for deploying a Zitadel project and OIDC application in Zitadel
 | <a name="input_zitadel_additional_origins"></a> [zitadel\_additional\_origins](#input\_zitadel\_additional\_origins) | List of additional origins. | `list(string)` | n/a | yes |
 | <a name="input_zitadel_application_oidc_name"></a> [zitadel\_application\_oidc\_name](#input\_zitadel\_application\_oidc\_name) | Name of the OIDC application. | `string` | n/a | yes |
 | <a name="input_zitadel_application_oidc_redirect_uris"></a> [zitadel\_application\_oidc\_redirect\_uris](#input\_zitadel\_application\_oidc\_redirect\_uris) | List of redirect URIs. | `list(string)` | n/a | yes |
+| <a name="input_zitadel_org_id"></a> [zitadel\_org\_id](#input\_zitadel\_org\_id) | Organization ID. | `string` | n/a | yes |
 | <a name="input_zitadel_post_logout_redirect_uris"></a> [zitadel\_post\_logout\_redirect\_uris](#input\_zitadel\_post\_logout\_redirect\_uris) | List of post logout redirect URI's. | `list(string)` | n/a | yes |
 | <a name="input_zitadel_project_name"></a> [zitadel\_project\_name](#input\_zitadel\_project\_name) | Name of the Zitadel project. | `string` | n/a | yes |
-| <a name="input_access_token_role_assertion"></a> [access\_token\_role\_assertion](#input\_access\_token\_role\_assertion) | Access token role assertion. | `bool` | `null` | no |
-| <a name="input_zitadel_has_project_check"></a> [zitadel\_has\_project\_check](#input\_zitadel\_has\_project\_check) | Checks if user's org has permission to this project. | `bool` | `null` | no |
-| <a name="input_zitadel_id_token_role_assertion"></a> [zitadel\_id\_token\_role\_assertion](#input\_zitadel\_id\_token\_role\_assertion) | ID token role assertion. | `bool` | `null` | no |
-| <a name="input_zitadel_id_token_userinfo_assertion"></a> [zitadel\_id\_token\_userinfo\_assertion](#input\_zitadel\_id\_token\_userinfo\_assertion) | ID token user info assertion. | `bool` | `null` | no |
-| <a name="input_zitadel_project_role_assertion"></a> [zitadel\_project\_role\_assertion](#input\_zitadel\_project\_role\_assertion) | Describes if user roles should be added to token. | `bool` | `null` | no |
-| <a name="input_zitadel_project_role_check"></a> [zitadel\_project\_role\_check](#input\_zitadel\_project\_role\_check) | Checks if user has at least one role in this project. | `bool` | `null` | no |
+| <a name="input_access_token_role_assertion"></a> [access\_token\_role\_assertion](#input\_access\_token\_role\_assertion) | Access token role assertion. | `bool` | `false` | no |
+| <a name="input_zitadel_dev_mode"></a> [zitadel\_dev\_mode](#input\_zitadel\_dev\_mode) | Dev mode. | `bool` | `false` | no |
+| <a name="input_zitadel_has_project_check"></a> [zitadel\_has\_project\_check](#input\_zitadel\_has\_project\_check) | Checks if user's org has permission to this project. | `bool` | `false` | no |
+| <a name="input_zitadel_id_token_role_assertion"></a> [zitadel\_id\_token\_role\_assertion](#input\_zitadel\_id\_token\_role\_assertion) | ID token role assertion. | `bool` | `false` | no |
+| <a name="input_zitadel_id_token_userinfo_assertion"></a> [zitadel\_id\_token\_userinfo\_assertion](#input\_zitadel\_id\_token\_userinfo\_assertion) | ID token user info assertion. | `bool` | `false` | no |
+| <a name="input_zitadel_project_role_assertion"></a> [zitadel\_project\_role\_assertion](#input\_zitadel\_project\_role\_assertion) | Describes if user roles should be added to token. | `bool` | `false` | no |
+| <a name="input_zitadel_project_role_check"></a> [zitadel\_project\_role\_check](#input\_zitadel\_project\_role\_check) | Checks if user has at least one role in this project. | `bool` | `false` | no |
+| <a name="input_zitadel_skip_native_app_success_page"></a> [zitadel\_skip\_native\_app\_success\_page](#input\_zitadel\_skip\_native\_app\_success\_page) | Skips successful login page on native apps and directly redirect the user to the callback. | `bool` | `false` | no |
 
 ## Outputs
 
