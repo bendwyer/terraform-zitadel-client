@@ -27,6 +27,7 @@ resource "zitadel_application_oidc" "this" {
   dev_mode                     = var.zitadel_dev_mode
   id_token_role_assertion      = var.zitadel_id_token_role_assertion
   id_token_userinfo_assertion  = var.zitadel_id_token_userinfo_assertion
+  org_id                       = var.zitadel_org_id
   post_logout_redirect_uris    = var.zitadel_post_logout_redirect_uris
   skip_native_app_success_page = var.zitadel_skip_native_app_success_page
 }
